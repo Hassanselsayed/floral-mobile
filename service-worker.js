@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/floral-mobile/precache-manifest.a7714ea143cf6f95118b3de077cc2d83.js"
+  "/floral-mobile/precache-manifest.c546caac825691cb6528e11cff4ee5c7.js"
 );
 
 self.addEventListener('message', (event) => {
