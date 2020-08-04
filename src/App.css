@@ -1,38 +1,86 @@
-.App {
-  text-align: center;
+html {
+	font-size: 125%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body,
+h1,
+h2,
+h3,
+h4,
+ul,
+button,
+p {
+	margin: 0;
+	padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	color: inherit;
+}
+button {
+	background: none;
+	border: none;
+  cursor: pointer;
+}
+.wrapper {
+	width: 80%;
+	margin: 0 auto;
+	max-width: 1350px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* header styling */
+.topNav {
+  background-color: black;
+  padding: 20px auto;
+  height: 10vh;
+}
+.largeHeight {
+  height: fit-content;
+}
+.topNavFlex {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 4vh;
+}
+.logo {
+  color: orange;
+  width: 9%;
+  margin-right: 1%;
+}
+.topNavLinks {
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+
+}
+.topNavLinks li {
+  margin: 0 20px;
+  position: relative;
+  width: 100%;
+}
+.topNavLinks button {
+  color: gray;
+  font-size: 1rem;
+}
+
+.hiddenList {
+  visibility: hidden;
+  /* position: absolute; */
+  /* bottom: 0; */
+}
+.hiddenList li {
+  margin: 15px 0;
+}
+
+.shownClass {
+  visibility: visible;
+}
+.location {
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  width: 9%;
+  margin-left: 1%;
 }
