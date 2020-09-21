@@ -4,19 +4,20 @@ import './index.css';
 
 import HeaderNav from './components/HeaderNav';
 import Main from './components/Main';
+import Footer from './components/Footer';
 
 
 class App extends Component {
   render() {
     return (
-      <div>
+      <div id="home">
         <HeaderNav />
         <header>
           <div className="headerBody wrapper">
             <div className="promotion">
-              <h1>Get iPhone SE On Us.</h1>
-              <p>For a limited time, get iPhone SE (64GB) for Absolute ZeroTM 9 with 20GB of Fast LTE Data for only $65/mo3. 2-year term required.</p>
-              <button>Shop Now</button>
+              <h1>Lorem ipsum dolor sit amet.</h1>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus quod earum nobis. Molestiae ratione aspernatur repellendus omnis quae beatae tempora!</p>
+              <button>Click</button>
             </div>
             <div className="headerImg">
               <img src={require("./assets/headerImg.jpg")} alt=""/>
@@ -24,6 +25,7 @@ class App extends Component {
           </div>
         </header>
         <Main />
+        <Footer />
       </div>
     )
   }

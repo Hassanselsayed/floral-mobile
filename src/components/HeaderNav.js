@@ -90,6 +90,7 @@ class HeaderNav extends Component {
     render() {
         return (
             <nav className="topNav">
+
                 
                 <div className={`link link1 ${this.state.active1 ? "shownClass" : null}`}></div>
                 <div className={`link link2 ${this.state.active2 ? "shownClass" : null}`}></div>
@@ -98,64 +99,77 @@ class HeaderNav extends Component {
                 <div className={`link link5 ${this.state.active5 ? "shownClass" : null}`}></div>
 
                 <div className="topNavFlex wrapper">
-                    <a href="#" className="logo">Floral</a>
-                    <ul className="topNavLinks">
-                        <li onMouseLeave={() => this.removeElement(1)}>
-                            <button onMouseEnter={() => this.addElement(1)}>Shop</button>
-                            
-                            <ul className={`hiddenList ${this.state.active1 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('A')}>
-                                <li><a href="#">Devices</a></li>
-                                <li><a href="#">Plans</a></li>
-                                <li><a href="#">Bring your own Phone</a></li>
-                                <li><a href="#">Prepaid</a></li>
-                                <li><a href="#">Add-ons</a></li>
-                                <li><a href="#">Special Offers</a></li>
-                            </ul>
-                        </li>
-                        <li onMouseLeave={() => this.removeElement(2)}>
-                            <button onMouseEnter={() => this.addElement(2)}>Coverage</button>
-                            <ul className={`hiddenList ${this.state.active2 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('B')}>
-                                <li><a href="#">Network Coverage</a></li>
-                                <li><a href="#">Network Expansion</a></li>
-                                <li><a href="#">International Calling & Texting</a></li>
-                                <li><a href="#">International Roaming</a></li>
-                                <li><a href="#">Transit</a></li>
-                                <li><a href="#">Floral 5G</a></li>
-                            </ul>
-                        </li>
-                        <li onMouseLeave={() => this.removeElement(3)}>
-                            <button onMouseEnter={() => this.addElement(3)}>Support</button>
-                            <ul className={`hiddenList ${this.state.active3 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('C')}>
-                                <li><a href="#">All Support</a></li>
-                                <li><a href="#">Account & Billing</a></li>
-                                <li><a href="#">Network & Coverage</a></li>
-                                <li><a href="#">Plans & Services</a></li>
-                                <li><a href="#">Phones & Devices</a></li>
-                                <li><a href="#">Home Internet</a></li>
-                            </ul>
-                        </li>
-                        <li onMouseLeave={() => this.removeElement(4)}>
-                            <button onMouseEnter={() => this.addElement(4)}>MyFloral</button>
-                            <ul className={`hiddenList ${this.state.active4 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('D')}>
-                                <li><a href="#">Login</a></li>
-                                <li><a href="#">Express Payment</a></li>
-                                <li><a href="#">MyAccount</a></li>
-                            </ul>
-                        </li>
-                        <li onMouseLeave={() => this.removeElement(5)}>
-                            <button onMouseEnter={() => this.addElement(5)}>Contact</button>
-                            <ul className={`hiddenList ${this.state.active5 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('E')}>
-                                <li><a href="#">Apple iMessage</a></li>
-                                <li><a href="#">WhatsApp</a></li>
-                                <li><a href="#">Facebook Messenger</a></li>
-                                <li><a href="#">Twitter</a></li>
-                                <li><a href="#">Other Contact Options</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <a href="#home" className="logo">Floral</a>
+                    <div className="nav-div">
+                        <button className="hamburger" title="Click here to open up hamburger menu"><i className="fas fa-bars"></i>
+                            <span className="sr-only">Click here to open up hamburger menu</span>
+                        </button>
+                        <nav className="menu">
+                            <div className="full-screen">
+                                <button className="exit-responsive" title="Click me to close the navigation">
+                                    <i className="fas fa-times"></i>
+                                    <span className="sr-only">Click me to close the navigation</span>
+                                </button>
+
+                                <ul className="topNavLinks">
+                                    <li onMouseLeave={() => this.removeElement(1)}>
+                                        <button onMouseEnter={() => this.addElement(1)}>Menu1</button>
+                                        
+                                        <ul className={`hiddenList ${this.state.active1 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('A')}>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem ipsum dolor sit</a></li>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li onMouseLeave={() => this.removeElement(2)}>
+                                        <button onMouseEnter={() => this.addElement(2)}>Menu2</button>
+                                        <ul className={`hiddenList ${this.state.active2 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('B')}>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum dolor sit</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li onMouseLeave={() => this.removeElement(3)}>
+                                        <button onMouseEnter={() => this.addElement(3)}>Menu3</button>
+                                        <ul className={`hiddenList ${this.state.active3 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('C')}>
+                                            <li><a href="#home">Lorem</a></li>                                <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                        </ul>
+                                    </li>
+                                    <li onMouseLeave={() => this.removeElement(4)}>
+                                        <button onMouseEnter={() => this.addElement(4)}>Menu4</button>
+                                        <ul className={`hiddenList ${this.state.active4 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('D')}>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem</a></li>
+                                        </ul>
+                                    </li>
+                                    <li onMouseLeave={() => this.removeElement(5)}>
+                                        <button onMouseEnter={() => this.addElement(5)}>Menu5</button>
+                                        <ul className={`hiddenList ${this.state.active5 ? "shownClass" : null}`} onMouseEnter={() => this.addElementAgain('E')}>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem ipsum</a></li>
+                                            <li><a href="#home">Lorem</a></li>
+                                            <li><a href="#home">Lorem ipsum dolor</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
                     <div className="location">
                         <i></i>
-                        <a href="#">Find a Store</a>
+                        <a href="#home">Find a Shop</a>
                     </div>
                 </div>
             </nav>

@@ -96,19 +96,19 @@ header {
   width: 100%;
 }
 .link1 {
-  height: 33vh;
+  height: 238px;
 }
 .link2 {
-  height: 33vh;
+  height: 238px;
 }
 .link3 {
-  height: 33vh;
+  height: 238px;
 }
 .link4 {
-  height: 18vh;
+  height: 130px;
 }
 .link5 {
-  height: 28vh;
+  height: 202px;
 }
 .hiddenList {
   visibility: hidden;
@@ -173,11 +173,10 @@ header {
 /* main styles */
 main {
   background-color: rgb(245, 245, 245);
-  padding-top: 20px;
+  padding: 20px 0;
 }
 main button {
   background-color: rgb(195, 85, 0);
-  /* width: 100%; */
   color: white;
   padding: 1.25rem 1.75rem;
   font-size: 1.1rem;
@@ -204,7 +203,7 @@ main button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 0 5%;
+  padding: 5%;
 }
 .s1cSub h2,
 .s1cSub p:nth-of-type(2) {
@@ -277,3 +276,114 @@ main button:focus {
 .s2c2SubC button {
   align-self: stretch;
 }
+/* end of main styles */
+
+/* footer styles */
+.footerDiv {
+  background-color: black;
+  color: rgb(222, 222, 222);
+}
+.bottomNavList {
+  padding: 10vh 0;
+  display: flex;
+  justify-content: space-between;
+}
+.bottomNavColumn {
+display: flex;
+flex-direction: column;
+}
+.bottomNavColumn h3 {
+  text-transform: uppercase;
+  margin-bottom: 25px;
+  font-weight: normal;
+}
+.columnItems {
+  line-height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.columnItems a {
+  transition: all 0.5s;
+}
+.columnItems a:hover,
+.columnItems a:focus {
+  color: rgb(198, 79, 0);
+}
+i {
+  font-size: 22px;
+  color: rgb(198, 79, 0);
+  margin-left: 5px;
+  cursor: pointer;
+}
+.hamburger {
+    height: 5vh;
+
+    float: right;
+}
+.hamburger,
+.exit-responsive {
+  display: none;
+}
+.exit-responsive {
+	position: relative;
+	top: 30px;
+	left: 30px;
+	font-size: 1.5rem;
+}
+.show.menu {
+	display: block;
+}
+/* media queries */
+@media (max-width: 1000px) {
+  .nav-div {
+    width: 100%;
+  }
+	.hamburger,
+	.exit-responsive {
+		display: block;
+	}
+
+	.menu {
+		display: none;
+	}
+
+	.menu .full-screen {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0,0,0,0.99);
+		color: rgb(255, 255, 255);
+		z-index: 10;
+	}
+
+	.full-screen ul {
+		display: flex;
+		flex-direction: column;
+		padding-top: 10%;
+  }
+  .location {
+    display: none;
+  }
+  header {
+    /* padding: 100px 0; */
+    height: fit-content;
+    /* min-height: 100vh; */
+  }
+  .headerBody {
+    flex-direction: column;
+    height: fit-content;
+  }
+  .headerImg {
+    width: 80%;
+    margin: 20px auto;
+  }
+  .promotion {
+    width: 100%;
+    margin: 20px auto;
+    order: 1;
+  }
+}
+
